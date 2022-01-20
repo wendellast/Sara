@@ -6,43 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SaraV2.5</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-
-
 </head>
-
-    
 
 <body>
 
     <main>
-        <header>
-            <h1><strong>Sara</strong>
-        </header>
-        <iframe
-            allow="microphone;"
-            width="350"
-            height="430"
-            src="https://console.dialogflow.com/api-client/demo/embedded/2c035323-59b8-4a86-aff3-fcdac7cb6fe2">
-        </iframe>
+       
+        <header class="titulo" ><p><strong>Sara</strong></p></header>
 
+        <div class="conteudo">
+
+            <div class="sara"><img src="imagens/sara.png" alt="imagen sara"></div>
+
+            <div class="bot"><iframe
+                    allow="microphone;"
+                    width="350"
+                    height="430"
+                    src="https://console.dialogflow.com/api-client/demo/embedded/2c035323-59b8-4a86-aff3-fcdac7cb6fe2">
+            </iframe>
+            </div>
+
+        </div>
+
+        <div class="texto">
+            <p>Olá sou Sara assistente pessoal do meu  
+                mestre,  seja bem vidoª ao meu site espero que  você goste, pode tentar fazer uma pergunta para mim e eu tentarei responder, suas perguntas vão me ajudar muito, a cada  pessoal que eu conheço mais inteligente eu fico, espero  
+                que você goste de mim, que tal começar tem um chat do lado ou a bolinha você pode apertar para começar vamos lá !!</p>
+                
+        </div>
+
+        <footer class="pe">
+            <p>Site criado por <strong><a href="https://github.com/wendellast" target="__black">Wendel Alves  </a></strong>, modelo de teste Sara 1.0</p>
+        </footer>
         
-
         
 
     </main>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-        
-    <df-messenger
-        intent="WELCOME"
-        chat-title="SaraV2.5"
-        agent-id="2c035323-59b8-4a86-aff3-fcdac7cb6fe2"
-        language-code="pt-br"
-    ></df-messenger>
-
-</body>
-
+        <df-messenger
+          intent="WELCOME"
+          chat-title="SaraV2.5"
+           agent-id="2c035323-59b8-4a86-aff3-fcdac7cb6fe2"
+          language-code="pt-br"
+        ></df-messenger>
     
+</body>
 </html>
