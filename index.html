@@ -19,7 +19,10 @@
 
         <div class="conteudo">
 
-            <div class="sara"><img src="imagens/sara.png" alt="imagen sara"></div>
+            <picture>
+               <source media="(max-width: 600px)" srcset="imagens/sara_pequena.png">
+                <div class="sara"><img src="imagens/sara.png" alt="imagen sara"></div>
+            </picture>
 
             <div class="bot"><iframe
                     allow="microphone;"
@@ -45,6 +48,7 @@
         
 
     </main>
+    
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
         <df-messenger
           intent="WELCOME"
